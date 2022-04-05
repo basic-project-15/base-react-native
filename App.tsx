@@ -1,11 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { TailwindProvider } from 'tailwind-rn';
+import MyComponent from './src/MyComponent';
+import utilities from './tailwind.json';
 
 const App = () => {
   return (
-    <View>
-      <Text>Base Project 15</Text>
-    </View>
+    <TailwindProvider utilities={utilities}>
+      <MyComponent />
+    </TailwindProvider>
   );
 };
 
