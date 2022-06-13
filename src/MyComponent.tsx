@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { SafeAreaView, View, Text } from 'react-native';
 import { useTailwind } from 'tailwind-rn';
 import globalStyles from './styles/globalStyles';
 
-const MyComponent = () => {
+const MyComponent: FC = () => {
   const tailwind = useTailwind();
 
   return (
