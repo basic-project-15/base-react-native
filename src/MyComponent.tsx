@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
 import { SafeAreaView, View, Text } from 'react-native';
+
+// Package
 import { useTailwind } from 'tailwind-rn';
+
+// Styles
 import globalStyles from './styles/globalStyles';
 
 const MyComponent: FC = () => {
